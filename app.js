@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://ailtonjr:Iloveyougabs36758@cluster0.dq7kh.mongodb.net/todolistDB", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://ailtonjr:n21gwCXk4pgNZDLT@cluster0.dq7kh.mongodb.net/todolistDB", { useNewUrlParser: true });
 
 const itemsSchema = {
   name: String
@@ -139,7 +139,6 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
 }
-app.listen(port);
 
 app.listen(port, function() {
   console.log("Server started on port 3000");
